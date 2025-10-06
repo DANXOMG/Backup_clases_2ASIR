@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sentencia condicional switch</title>
 </head>
-<body>
+</body>
     <h1>Uso de sentencia condicional switch</h1>
 
     <?php
@@ -25,7 +25,7 @@
         }
         default: "El valor de la variable num, no es UNO ni DOS";
     }
-
+    ?>
 
 </body>
 </html>
