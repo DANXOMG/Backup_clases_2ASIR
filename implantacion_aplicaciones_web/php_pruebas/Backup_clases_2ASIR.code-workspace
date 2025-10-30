@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../TFG_AWS_ANTIVIRUS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Backup_clases_2ASIR"
+	}
+}
