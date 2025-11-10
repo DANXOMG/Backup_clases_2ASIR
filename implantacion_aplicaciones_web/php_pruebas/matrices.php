@@ -36,13 +36,13 @@
    for ($i = 0; $i < count($matriz1); $i++) {
         for ($j = 0; $j < count($matriz1[$i]); $j++) {
             $resultado[$i][$j] = $matriz1[$i][$j] + $matriz2[$i][$j];
-    };
+        }   
+    }
 
+
+        // Mostrar el resultado
 
     ?>
-
-
-
 
 </body>
 </html>
