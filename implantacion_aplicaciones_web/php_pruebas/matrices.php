@@ -29,10 +29,10 @@
         [1, 0, 1]
     ];
 
-    // Donde guardaremos el resultado
+    // Donde haremos la matriz como resultado
     $resultado = [];
 
-    // Recorrer las filas
+    // Suma de las dos matrices
    for ($i = 0; $i < count($matriz1); $i++) {
         for ($j = 0; $j < count($matriz1[$i]); $j++) {
             $resultado[$i][$j] = $matriz1[$i][$j] + $matriz2[$i][$j];
@@ -40,7 +40,12 @@
     }
 
 
-        // Mostrar el resultado
+
+//  Mostrar el resultado
+    print_r($resultado);
+
+
+        
 
     ?>
 
