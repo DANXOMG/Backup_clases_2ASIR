@@ -21,7 +21,7 @@
     echo "<p> numero = $numero <p>";
     echo "<p> cadena = $cadena <p>";
     echo "<p> cierto = $cierto <p>";
-        echo "<p> falso = $falso </p>";
+    echo "<p> falso = $falso </p>";
 
 
 

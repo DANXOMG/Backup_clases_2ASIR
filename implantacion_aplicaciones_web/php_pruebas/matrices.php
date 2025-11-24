@@ -12,11 +12,7 @@
     //                               ( 2 2 2 )  //  ( 2 2 2 )  ==   ( 3 3 3 )
     //                               ( 1 0 3 )  //  ( 1 0 1 )  ==   ( 2 0 4  )
 
-    // Vamos a crear las matrices
-
-
-    $limite = [0];
-
+//    // Vamos a crear las matrices
     $matriz1 = [
         [1, 2, 3],
         [2, 2, 2],
@@ -33,16 +29,16 @@
     $resultado = [];
 
     // Suma de las dos matrices
-   for ($i = 0; $i < count($matriz1); $i++) {
-        for ($j = 0; $j < count($matriz1[$i]); $j++) {
-            $resultado[$i][$j] = $matriz1[$i][$j] + $matriz2[$i][$j];
+   for ($i = 0; $i < $matriz1; $i++) {
+        for ($j = 0; $j < 3; $j++) {
+            
         }   
     }
 
 
+    // Mostrar Resultado
 
-//  Mostrar el resultado
-    print_r($resultado);
+
 
 
         
