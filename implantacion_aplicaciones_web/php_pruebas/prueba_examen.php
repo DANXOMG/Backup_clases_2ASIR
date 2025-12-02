@@ -26,15 +26,15 @@ function rellenarmatriz($matriz, $filas, $columnas){
 }
 
 function mostrarmatriz($matriz){
-    echo "<table>";
+    echo "<table bordercolor='red' cellpadding='6' style='border-collapse: collapse; text-align: center; justify-self:center; display:flex'>>";
     foreach ($matriz as $fila){
         echo "<tr>";
         foreach ($fila as $valor){
-            echo "<td>"$valor"</td>"
+            echo "<td>"$valor"</td>";
         }
         echo "</tr>";
     }
-    echo "</table>"
+    echo "</table>";
 }
 
 
