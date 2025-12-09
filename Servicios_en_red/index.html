@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dani | Portafolio Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --text: #e0e0e0;
+      --accent: #00ff99;
+      --card: #121212;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    header::before {
+      content: '';
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0,255,153,0.15) 0%, transparent 70%);
+      top: -200px;
+      right: -200px;
+      border-radius: 50%;
+      animation: pulse 8s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    
+    .hero h1 {
+      font-size: 5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #fff, var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .hero p {
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      opacity: 0.8;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: transparent;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: all 0.4s ease;
+    }
+    
+    .btn:hover {
+      background: var(--accent);
+      color: #000;
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,255,153,0.3);
+    }
+    
+    section {
+      padding: 100px 10%;
+    }
+    
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 4rem;
+      background: linear-gradient(90deg, #fff, var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .card {
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 16px;
+      border: 1px solid rgba(0,255,153,0.1);
+      transition: all 0.4s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: var(--accent);
+      box-shadow: 0 20px 40px rgba(0,255,153,0.1);
+    }
+    
+    .card h3 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 60px 20px;
+      background: #000;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 3.5rem; }
+      .hero p { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>Hola, soy Dani</h1>
+      <p>Diseñador & Desarrollador creativo • Me apasiona crear experiencias digitales únicas con un toque futurista.</p>
+      <a href="#proyectos" class="btn">Ver mis proyectos</a>
+    </div>
+  </header>
+
+  <section id="proyectos">
+    <h2>Mis Proyectos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Neon Dashboard</h3>
+        <p>Un panel de administración con estética cyberpunk, animaciones fluidas y modo oscuro nativo.</p>
+      </div>
+      <div class="card">
+        <h3>Flow Landing</h3>
+        <p>Landing page minimalista con scroll parallax y micro-interacciones que convierten.</p>
+      </div>
+      <div class="card">
+        <h3>AI Gallery</h3>
+        <p>Galería de arte generada por IA con filtros en tiempo real y carga infinita.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Néo • Hecho con ☕ y mucho neón</p>
+  </footer>
+
+</body>
+</html>
