@@ -16,16 +16,15 @@
       $limite=10;
       //Establecer los primeros dos números
        
-      $fibonacci = [0, 1];
+      $fibonacci=[0,1]
       
-      for ($i = 2; $i < $limite; $i++) {
-        $fibonacci[$i] = $fibonacci[$i - 1] + $fibonacci[$i - 2];
+      for ($i=2;$i < $limite;$i++){
+        $fibonacci[$i]=$fibonacci[i-1]+$fibonacci[$i-2];
       }
       //Mostrar la informacion
       echo "Los $limite primeros números de la serie de Fibonacci son:";
       foreach($fibonacci as $numero){
-       echo $numero . ",";
-      }
+       echo $numero:",";}
       ?>
   </body>
 
