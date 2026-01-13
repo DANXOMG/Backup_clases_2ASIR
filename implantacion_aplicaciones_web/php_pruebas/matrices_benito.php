@@ -54,6 +54,11 @@ for ($i = 0; $i < count($resultado); $i++) {
     }
     echo "</tr>";
 }
+
+
+
+
+
 ?>
 
 </table>
