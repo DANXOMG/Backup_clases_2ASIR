@@ -99,4 +99,38 @@ DELIMITER ;
 SELECT fun_fecha_nacimiento_autor(1);
 
 
+-- Crear Funcion para contar libros de un autor
+DELIMITER $$
+DROP FUNCTION IF EXISTS fun_contar_libros_autor $$
+CREATE FUNCTION fun_contar_libros_autor(p_id_autor INT)
+RETURNS INT
+DETERMINISTIC
+
+BEGIN
+    DECLARE v_total_libros INT;
+    
+
+    SELECT COUNT(*) INTO v_total_libros FROM libros
+    WHERE id_autor = p_id_autor;
+    RETURN v_total_libros;
+
+END $$
+DELIMITER ;
+
+SELECT fun_contar_libros_autor(1);
+
+
+-- voy a hacer un trigger
+DELIMITER $$
+CREATE TRIGGER trigger_contar_libros_autor 
+AFTER INSERT ON libros
+FOR EACH ROW
+BEGIN
+    UPDATE autores
+    SET total_libros = total_libros + 1
+    WHERE id_autor = NEW.id_autor;
+END $$  
+DELIMITER ; 
+
+
 
