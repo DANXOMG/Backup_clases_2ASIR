@@ -137,9 +137,7 @@ CALL prestamos_pendientes_cliente();
 
 
 
-
-
-
+CREATE PROCEDURE
 
 
     

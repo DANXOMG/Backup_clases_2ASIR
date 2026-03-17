@@ -10,15 +10,15 @@ $matrizB = [
     [1, 1, 1],
     [2, 2, 2],
     [3, 3, 3]
-]
+];
 
-$resultado = [];
+$resultado = [] ;
 $filas = count($matrizA);
 $columas = count($matrizA[0]);
 
 function rellenarmatriz($matriz, $filas, $columnas){
     for ($i=0; $i < $filas; $i++) {
-        for ($j=0; $j < $columas; $j++) { 
+        for ($j=0; $j < $columnas; $j++) { 
             $matriz[$i][$j] = "*";
         } 
         
@@ -30,7 +30,7 @@ function mostrarmatriz($matriz){
     foreach ($matriz as $fila){
         echo "<tr>";
         foreach ($fila as $valor){
-            echo "<td>"$valor"</td>";
+            echo "<td>" . $valor. "</td>";
         }
         echo "</tr>";
     }
