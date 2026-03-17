@@ -10,9 +10,13 @@ Te cobran por uso no tienes que estar pendiente de mantenimiento físico
 3. Escalabilidad y Flexibilidad
 
 
-## INSTALAR AWS CLI EN WINDOWS (buscar aws cli)
+### PREREQUISITOS 
+
+    1. INSTALAR AWS CLI EN WINDOWS (buscar aws cli)
+    2. Activar el MFA para que sea seguro y no me cobren
+        2.1 crear alarma para mitigar costes (mirar documentacion en cloudwatch)
 
 
-FUNDAMENTOS
+
 
 
