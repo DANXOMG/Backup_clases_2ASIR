@@ -9,6 +9,8 @@ Te cobran por uso no tienes que estar pendiente de mantenimiento físico
 2. Amplia gama de servicios
 3. Escalabilidad y Flexibilidad
 
+Toda esta documentacion es obtenida por: 
+Curso de AWS Desde Cero: https://www.youtube.com/watch?v=zQyrhjEAqLs
 
 ### PREREQUISITOS 
 
