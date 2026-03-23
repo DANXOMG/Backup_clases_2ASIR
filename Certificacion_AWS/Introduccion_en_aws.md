@@ -17,6 +17,7 @@ Curso de AWS Desde Cero: https://www.youtube.com/watch?v=zQyrhjEAqLs
     1. INSTALAR AWS CLI EN WINDOWS (buscar aws cli)
     2. Activar el MFA para que sea seguro y no me cobren
         2.1 crear alarma para mitigar costes (mirar documentacion en cloudwatch)
+        mirar docu: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html
 
 
 
